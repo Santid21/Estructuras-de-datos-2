@@ -1,5 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Ignorar todo
+*
+
+# Pero no ignores estas carpetas
+!/Challenger-08
+!/Challenger-08/**
+
+# Y no ignores el .gitignore
+!.gitignore
+
 # dependencies
 /node_modules
 /.pnp
