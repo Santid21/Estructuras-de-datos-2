@@ -1,0 +1,14 @@
+@import './styles/mixins';
+
+.container {
+  @include flex-center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}

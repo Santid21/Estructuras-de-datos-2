@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  @include flex-center;
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: $radius;
+}
