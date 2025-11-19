@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #1976d2;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar .section {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sidebar input, .sidebar select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: #f57c00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background: #e65100;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.graph-svg {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background: #e3f2fd;
+}
+
+.tree-node {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.tree-node:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.tree-level-0 { background: #a5d6a7; }
+.tree-level-1 { background: #81c784; }
+.tree-level-2 { background: #66bb6a; }
+.tree-level-3 { background: #4caf50; }
+.tree-level-4 { background: #388e3c; }
+.tree-level-5 { background: #2e7d32; }
+
+.city-list p {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px 0;
+  transition: all 0.2s;
+}
+
+.city-list p:hover { background-color: rgba(255,255,255,0.2); }
+.city-list p.active { font-weight: bold; background-color: #f57c00; color: white; }
